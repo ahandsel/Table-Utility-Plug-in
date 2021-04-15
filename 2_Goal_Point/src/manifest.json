@@ -1,6 +1,6 @@
 {
-  "manifest_version": 1,
-  "version": 1,
+  "manifest_version": 2,
+  "version": 2,
   "type": "APP",
   "desktop": {
     "js": [
@@ -26,12 +26,12 @@
     ]
   },
   "name": {
-    "en": "Table Numbering Plug-in for workshop"
+    "en": "Table Utility Plug-in"
   },
   "description": {
-    "en": "This sample plug-in automatically adds row numbers to table rows each time the record is saved."
+    "en": "This is an enhanced version of the Table Numbering Plug-in that includes sorting functionality."
   },
   "homepage_url": {
-    "en": "https://developer.kintone.io/hc/en-us/articles/360012420813"
+    "en": "https://github.com/ahandsel/Table-Utility-Plug-in"
   }
 }
