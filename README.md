@@ -1,12 +1,19 @@
-# Table-Utility-Plug-in
+<h1 style="text-align: center;">LiveCoding: Table Utility Plug-in Series</h1>
+ Table-Utility-Plug-in
 
 Hello there, this repo contains all you need to follow along the Kintone Developer Program (KDP)'s LiveCoding Table Utility Plug-in Series!
+
+Note: These instructions are also [viewable as slides](https://slides.trouni.com/?src=ahandsel/Table-Utility-Plug-in&justify=left#/).
+
+---
 
 ## Starting Point
 
 We are starting off with the [Table Numbering Plug-in](https://developer.kintone.io/hc/en-us/articles/360012420813). This is a sample Plug-in provided by Kintone to showcase how Kintone Plug-ins work & how they are structured.
 
 Table Numbering Plug-in automatically adds row numbers to table rows each time the record is saved. The numbers are inserted into a [Number field](https://get.kintone.help/k/en/user/app_settings/form/form_parts/number.html) in the [Table](https://get.kintone.help/k/en/user/app_settings/form/form_parts/field_table.html) and automatically re-number themselves when the record is edited & re-saved.
+
+---
 
 ### Plug-in directory structure
 The Table Numbering Plug-in is located inside the [1_Starting_Point](./1_Starting_Point/) folder and is structured as the following directory tree.
@@ -30,6 +37,8 @@ src/
 └── manifest.json  
 ```
 
+---
+
 ### How to Use the Table Numbering Plug-in?
 To test out the Plug-in on your Kintone Subdomain, follow these steps:
 
@@ -40,6 +49,8 @@ To test out the Plug-in on your Kintone Subdomain, follow these steps:
 3. Add the Plug-in to a specific Kintone App that has a [Table](https://get.kintone.help/k/en/user/app_settings/form/form_parts/field_table.html) with a [Number field](https://get.kintone.help/k/en/user/app_settings/form/form_parts/number.html).
     * ![Plugin_Setup_Demo.gif](img/Plugin_Setup_Demo.gif)
     * Reference: [Adding Plug-Ins to an App](https://get.kintone.help/k/en/user/app_settings/plugin.html)
+
+---
 
 ## Goal!
 
