@@ -3,12 +3,14 @@
 jQuery.noConflict();
 (function ($, PLUGIN_ID) {
   'use strict';
-  // Get configuration settings
 
+  // Get configuration settings
   var CONF = kintone.plugin.app.getConfig(PLUGIN_ID);
   var $form = $('.js-submit-settings');
   var $cancelButton = $('.js-cancel-button');
   var $number = $('select[name="js-select-number-field"]');
+
+  //
   var $sortButton = $('select[name="js-select-space-field"]');
   var $sortBy = $('select[name="js-select-sort-by"]');
   var $sortOrder = $('select[name="js-select-order-by"]');
@@ -21,13 +23,13 @@ jQuery.noConflict();
   function setDropDown(dropdownField, fieldType, prop) {
     var $option = $('<option>');
 
-    // Retrieve field information, then set drop-down
+    // Retrieve field options, then set drop-down
     return KintoneConfigHelper.getFields(fieldType)
       .then(function (resp) {
         resp.forEach(function (field) {
           switch (field.type) {
             case 'SPACER':
-              $option.attr('value', field.elementId); // Set table code and number field code
+              $option.attr('value', field.elementId); // Set Table code and Number field code
               $option.text(escapeHtml(field.elementId));
               dropdownField.append($option.clone());
               // Set default values
@@ -35,7 +37,7 @@ jQuery.noConflict();
               break;
             default:
               if (field.subtableCode) {
-                $option.attr('value', field.subtableCode + ',' + field.code); // Set table code and number field code
+                $option.attr('value', field.subtableCode + ',' + field.code); // Set Table code and Number field code
                 $option.text(escapeHtml(field.label));
                 dropdownField.append($option.clone());
                 // Set default values
@@ -47,7 +49,9 @@ jQuery.noConflict();
         return alert('Failed to retrieve field(s) information');
       });
   }
+
   $(document).ready(function () {
+
     // Set drop-down list
     setDropDown($number, ['NUMBER'], 'number');
     setDropDown($sortButton, ['SPACER'], 'button');
@@ -60,22 +64,27 @@ jQuery.noConflict();
     $form.on('submit', function (e) {
       var config = [];
       var number = $number.val();
+
       var button = $sortButton.val();
       var sortBy = $sortBy.val();
       var sortOrder = $sortOrder.val();
+
       e.preventDefault();
 
-      config.table = number.split(',')[0]; // Set table field code
-      config.number = number.split(',')[1]; // Set number field code
-      config.button = button; // Set space field code
-      config.sortBy = sortBy.split(',')[1]; // Set field to be sorted
-      config.sortOrder = sortOrder; // Set sosrt order
+      config.table = number.split(',')[0]; // Set Table field code
+      config.number = number.split(',')[1]; // Set Number field code
 
+      config.button = button; // Set Space field code
+      config.sortBy = sortBy.split(',')[1]; // Set field to be sorted
+      config.sortOrder = sortOrder; // Set sorting order
+
+      // Prompt user to update the App
       kintone.plugin.app.setConfig(config, function () {
-        alert('The plug-in settings have been saved. Please update the app!');
+        alert('The Plug-in settings have been saved. Please update the App!');
         window.location.href = '/k/admin/app/flow?app=' + kintone.app.getId();
       });
     });
+
     // Process when 'Cancel' is clicked
     $cancelButton.on('click', function () {
       window.location.href = '/k/admin/app/' + kintone.app.getId() + '/plugin/';

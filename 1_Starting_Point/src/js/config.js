@@ -16,12 +16,13 @@ jQuery.noConflict();
   }
 
   function setDropDown() {
+    var $option = $('<option>');
+
     // Retrieve field options, then set drop-down
     return KintoneConfigHelper.getFields('NUMBER')
       .then(function (resp) {
         resp.forEach(function (field) {
           if (field.subtableCode) {
-            var $option = $('<option>');
             $option.attr('value', field.subtableCode + ',' + field.code); // Set Table code and Number field code
             $option.text(escapeHtml(field.label));
             $number.append($option.clone());
