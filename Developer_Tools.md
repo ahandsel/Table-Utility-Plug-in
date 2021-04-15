@@ -1,5 +1,7 @@
 # Developer Tools
 
+Note: These instructions are also [viewable as slides](https://slides.trouni.com/?src=https://raw.githubusercontent.com/ahandsel/Table-Utility-Plug-in/main/Developer_Tools.md#/)
+
 ## Overview
 
 [@kintone/plugin-packer](https://github.com/kintone/js-sdk/tree/master/packages/plugin-packer) & [@kintone/plugin-uploader](https://github.com/kintone/js-sdk/tree/master/packages/plugin-uploader) are Command-Line Interface (CLI) tools for packaging & uploading Kintone Plug-ins to your Kintone Subdomain (Environment).
