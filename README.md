@@ -9,7 +9,7 @@ Hello there, this repo contains all you need to follow along the Kintone Develop
   - [Step 3: Create a Kintone Subdomain (Environment)](#step-3-create-a-kintone-subdomain-environment)
 - [Starting Point](#starting-point)
   - [Plug-in directory structure](#plug-in-directory-structure)
-  - [How to Use the Table Numbering Plug-in?](#how-to-use-the-table-numbering-plug-in)
+- [How to Use the Table Numbering Plug-in?](#how-to-use-the-table-numbering-plug-in)
 - [Goal!](#goal)
 - [What are Kintone Plug-ins? 🧩](#what-are-kintone-plug-ins-)
 - [⚙️  What is Kintone?  ⚙️](#️--what-is-kintone--️)
@@ -73,7 +73,6 @@ This is a sample Plug-in provided by Kintone to showcase how Kintone Plug-ins wo
 
 Table Numbering Plug-in automatically adds row numbers to table rows each time the record is saved. The numbers are inserted into a [Number field](https://get.kintone.help/k/en/user/app_settings/form/form_parts/number.html) in the [Table](https://get.kintone.help/k/en/user/app_settings/form/form_parts/field_table.html) and automatically re-number themselves when the record is edited & re-saved.
 
----
 
 ### Plug-in directory structure
 The Table Numbering Plug-in is located inside the [1_Starting_Point](./1_Starting_Point/) folder and is structured as the following directory tree.
@@ -99,8 +98,9 @@ src/
 
 ---
 
-### How to Use the Table Numbering Plug-in?
+## How to Use the Table Numbering Plug-in?
 To test out the Plug-in on your Kintone Subdomain, follow three steps:
+
 
 ### Step 1 <!-- omit in toc -->
 Git clone this repository:
@@ -112,7 +112,6 @@ git clone https://github.com/ahandsel/Table-Utility-Plug-in
 Locate the [plugin.zip](1_Starting_Point/plugin.zip) file inside the `1_Starting_Point` folder  
 Path: `Table-Utility-Plug-in/1_Starting_Point/plugin.zip`
 
----
 
 ### Step 2 <!-- omit in toc -->
 Install the Plug-in into your Kintone Subdomain from the Kintone Administration Setting  
@@ -122,7 +121,6 @@ Reference: [Adding/Deleting Plug-Ins (System Administration)](https://get.kinton
   <img src="img/Plugin_Install_Demo.gif" alt="Install Plugin Demo">
 </p>
 
----
 
 ### Step 3 <!-- omit in toc -->
 Add the Plug-in to a specific Kintone App that has a [Table](https://get.kintone.help/k/en/user/app_settings/form/form_parts/field_table.html) with a [Number field](https://get.kintone.help/k/en/user/app_settings/form/form_parts/number.html)  
@@ -150,6 +148,10 @@ Kintone Plug-ins are packaged JavaScript customization files that can be importe
 
 For more information on Kintone Plug-ins, refer to [About Kintone Plug-ins](https://developer.kintone.io/hc/en-us/articles/900005169443) article.
 
+<p align="center">
+  <img src="https://developer.kintone.io/hc/article_attachments/360018540974/sample001.gif" alt="Table Numbering Plug-in Demo">
+</p>
+
 ---
 
 ## ⚙️  What is Kintone?  ⚙️
@@ -159,3 +161,7 @@ Kintone is a no-code/low-code cloud platform for teams to easily & effectively s
 Add JavaScript, CSS, &/or HTML to enhance the frontend UI/UX of a Kintone App (Web Database). This can include features such as [maps](https://developer.kintone.io/hc/en-us/articles/360000365282), [buttons](https://developer.kintone.io/hc/en-us/articles/360000479881), and [color-coding](https://developer.kintone.io/hc/en-us/articles/212495058).
 
 Read up on how to customize & develop on the Kintone Web Database platform at [developer.kintone.io](https://developer.kintone.io/)!
+
+<p align="center">
+  <img src="img/Kintone_Space_Demo.gif" alt="Table Numbering Plug-in Demo">
+</p>
