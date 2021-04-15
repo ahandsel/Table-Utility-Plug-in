@@ -1,0 +1,26 @@
+<!-- MIT License Copyright (c) 2018 Cybozu
+https://github.com/kintone/SAMPLE-Table-numbering-plug-in/blob/master/LICENSE -->
+<section>
+  <form class="js-submit-settings">
+    <div class="kintoneplugin-row">
+      <label for="select_number_field" class="kintoneplugin-label">Row Number
+        <span class="kintoneplugin-require">*</span>
+      </label>
+      <p class="kintoneplugin-desc">
+        Please select a Number field that exists in a table.<br/>
+        Row numbers will automatically be placed into this Number field.
+      </p>
+      <div class="kintoneplugin-select-outer">
+        <div class="kintoneplugin-select">
+          <select id="select-number-field" name="js-select-number-field">
+            <option value="">-----</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <p class="kintoneplugin-row">
+      <button type="button" class="js-cancel-button kintoneplugin-button-dialog-cancel">Cancel</button>
+      <button class="kintoneplugin-button-dialog-ok">Save</button>
+    </p>
+  </form>
+</section>
