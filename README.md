@@ -15,7 +15,7 @@ Hello there, this repo contains all you need to follow along the Kintone Develop
   - [What are Kintone Plug-ins? 🧩](#what-are-kintone-plug-ins-)
   - [What is Kintone? ⚙️](#what-is-kintone-️)
 
-Note: These instructions are also [viewable as slides](https://slides.trouni.com/?src=ahandsel/Table-Utility-Plug-in&justify=left#/).
+Note: These instructions are also [viewable as slides](https://slides.trouni.com/?src=ahandsel/Table-Utility-Plug-in#/).
 
 ---
 
@@ -72,7 +72,7 @@ Install the Plug-in into your Kintone Subdomain from the Kintone Administration 
 Reference: [Adding/Deleting Plug-Ins (System Administration)](https://get.kintone.help/k/en/admin/system_customization/add_plugin/plugin.html)
 
 <p align="center">
-  <img height="300" src="img/Plugin_Install_Demo.gif" alt="Install Plugin Demo">
+  <img height="500" src="img/Plugin_Install_Demo.gif" alt="Install Plugin Demo">
 </p>
 
 ---
@@ -82,7 +82,7 @@ Add the Plug-in to a specific Kintone App that has a [Table](https://get.kintone
 Reference: [Adding Plug-Ins to an App](https://get.kintone.help/k/en/user/app_settings/plugin.html)
 
 <p align="center">
-  <img height="300" src="img/Plugin_Setup_Demo.gif" alt="Setup Plugin Demo">
+  <img height="500" src="img/Plugin_Setup_Demo.gif" alt="Setup Plugin Demo">
 </p>
 
 ---
@@ -101,29 +101,31 @@ git clone https://github.com/ahandsel/Table-Utility-Plug-in
 
 We will be working off of the [Table Numbering Plug-in](https://developer.kintone.io/hc/en-us/articles/360012420813)'s code inside [1_Starting_Point](1_Starting_Point/) folder.
 
+---
+
 ### Step 2 - Sign Up for Kintone Developer Account (Website)
 
-  <h3 align="center"><a href="https://bit.ly/KDP_signup">bit.ly/KDP_signup</a></h3>
+  <strong><p align="center"><a href="https://bit.ly/KDP_signup">bit.ly/KDP_signup</a></p></strong>
 
   * ⚠ Do NOT use Safari
   * ⚡Accept Cookies First
   * ✅ Use Chrome & Firefox
 
 <p align="center">
-  <img height="400" src="img/KDP_Signup_Part_1.gif" alt="Demo of signing up for a Kintone Developer Account">
+  <img height="600" src="img/KDP_Signup_Part_1.gif" alt="Demo of signing up for a Kintone Developer Account">
 </p>
 
 ---
 
 ### Step 3 - Create a Kintone Subdomain (Environment)
 
-  <h3 align="center"><a href="http://bit.ly/K_DevLic">bit.ly/K_DevLic</a></h3>
+  <strong><p align="center"><a href="http://bit.ly/K_DevLic">bit.ly/K_DevLic</a></p></strong>
 
   * ⚡ Only use lowercase, numbers, & hyphens in your subdomain
   * ⚠ Do not use uppercase nor special characters
 
 <p align="center">
-  <img height="400" src="img/KDP_Signup_Part_2.gif" alt="Demo of Creating a Kintone Subdomain">
+  <img height="600" src="img/KDP_Signup_Part_2.gif" alt="Demo of Creating a Kintone Subdomain">
 </p>
 
 ---
