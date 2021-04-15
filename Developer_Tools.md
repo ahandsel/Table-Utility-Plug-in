@@ -24,7 +24,6 @@ $ npm install -g @kintone/plugin-packer
 
 $ cd sample_project
 $ kintone-plugin-packer [OPTIONS] src
-
 ```
 
 | OPTIONS             | Description                                  |
