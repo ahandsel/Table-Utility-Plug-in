@@ -138,6 +138,10 @@ Reference: [Adding Plug-Ins to an App](https://get.kintone.help/k/en/user/app_se
 
 ## What are Kintone Plug-ins? 🧩  
 
+|                           |                            |
+| ------------------------- | -------------------------- |
+| ![](img/Plugin_Intro.png) | ![](img/Plugin_Sample.gif) |
+
 <p align="center">
   <img src="img/Plugin_Intro.png" alt="Setting Page Files + Customization Files = Kintone Plug-in">
 </p>
