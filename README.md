@@ -12,13 +12,14 @@ Hello there, this repo contains all you need to follow along the Kintone Develop
   - [How to Use the Table Numbering Plug-in?](#how-to-use-the-table-numbering-plug-in)
 - [Goal!](#goal)
 - [What are Kintone Plug-ins? 🧩](#what-are-kintone-plug-ins-)
-- [⚙️ What is Kintone?](#️-what-is-kintone)
+- [⚙️  What is Kintone?  ⚙️](#️--what-is-kintone--️)
 
 Note: These instructions are also [viewable as slides](https://slides.trouni.com/?src=ahandsel/Table-Utility-Plug-in&justify=left#/).
 
 ---
 
 ## Getting Started
+
 
 ### Step 1: Clone the Table-Utility-Plug-in Repo
 
@@ -30,12 +31,13 @@ We will be working off of the [Table Numbering Plug-in](https://developer.kinton
 
 The code inside [2_Goal_Point](2_Goal_Point/) folder contains the modified Plug-in with the new sorting function.
 
----
 
 ### Step 2: Sign Up for Kintone Developer Account (Website)
 
 <strong>
-  <p style="align:center;font-size:2em !important;"><a href="https://bit.ly/KDP_signup">bit.ly/KDP_signup</a></p>
+  <p style="align:center !important;font-size:2em !important;">
+    <a href="https://bit.ly/KDP_signup">bit.ly/KDP_signup</a>
+  </p>
 </strong>
 
   * ⚠ Do NOT use Safari
@@ -46,11 +48,14 @@ The code inside [2_Goal_Point](2_Goal_Point/) folder contains the modified Plug-
   <img with="600" src="img/KDP_Signup_Part_1.gif" alt="Demo of signing up for a Kintone Developer Account">
 </p>
 
----
 
 ### Step 3: Create a Kintone Subdomain (Environment)
 
-  <strong><p align="center" font-size="40px"><a href="http://bit.ly/K_DevLic">bit.ly/K_DevLic</a></p></strong>
+<strong>
+  <p style="align:center !important;font-size:2em !important;">
+    <a href="http://bit.ly/K_DevLic">bit.ly/K_DevLic</a>
+  </p>
+</strong>
 
   * ⚡ Only use lowercase, numbers, & hyphens in your subdomain
   * ⚠ Do not use uppercase nor special characters
@@ -147,7 +152,7 @@ For more information on Kintone Plug-ins, refer to [About Kintone Plug-ins](http
 
 ---
 
-## ⚙️ What is Kintone?  
+## ⚙️  What is Kintone?  ⚙️
 
 Kintone is a no-code/low-code cloud platform for teams to easily & effectively share and collaborate on their data.
 
