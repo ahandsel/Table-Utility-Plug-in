@@ -7,13 +7,15 @@
   if (!CONFIG) {
     return false;
   }
-  
-  var TABLEFIELD, NUMBERFIELD, disableEvents;
-  var numberEvents, row;
+
+  var TABLEFIELD, NUMBERFIELD;
+  var disableEvents; // Disable Number fields during these Events
+  var numberEvents; // Number the Table rows during these Events
+  var row; // Keeps track of row
 
   TABLEFIELD = CONFIG.table; // Field code of the Table
   NUMBERFIELD = CONFIG.number; // Field code of Number field in the Table
-  disableEvents = [ // Events when the Number fields should be disabled
+  disableEvents = [
     'app.record.edit.show',
     'app.record.create.show',
     'app.record.edit.change.' + TABLEFIELD,
@@ -31,7 +33,6 @@
     return event;
   });
 
-  // Number the Table rows during these Events
   numberEvents = [
     'app.record.create.submit',
     'app.record.edit.submit'
