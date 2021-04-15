@@ -118,6 +118,8 @@ We will be working off of the [Table Numbering Plug-in](https://developer.kinton
 
 ## What are Kintone Plug-ins? 🧩  
 ![Plugin_Intro.png](img/Plugin_Intro.png)
+<img src="img/Plugin_Intro.png" alt="Setting Page Files + Customization Files = Kintone Plug-in" class="center">
+
 
 Kintone Plug-ins are packaged JavaScript customization files that can be imported into a Kintone environment & installed into any App (Web Database). Plug-ins provide an easy way for users to share & set up customizations.
   * Customization files - Where the data manipulation & other customization is stored.
