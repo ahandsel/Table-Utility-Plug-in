@@ -1,5 +1,4 @@
-<h1 style="text-align: center;">LiveCoding: Table Utility Plug-in Series</h1>
- Table-Utility-Plug-in
+# LiveCoding: Table Utility Plug-in Series
 
 Hello there, this repo contains all you need to follow along the Kintone Developer Program (KDP)'s LiveCoding Table Utility Plug-in Series!
 
@@ -9,7 +8,8 @@ Note: These instructions are also [viewable as slides](https://slides.trouni.com
 
 ## Starting Point
 
-We are starting off with the [Table Numbering Plug-in](https://developer.kintone.io/hc/en-us/articles/360012420813). This is a sample Plug-in provided by Kintone to showcase how Kintone Plug-ins work & how they are structured.
+We are starting off with the [Table Numbering Plug-in](https://developer.kintone.io/hc/en-us/articles/360012420813).  
+This is a sample Plug-in provided by Kintone to showcase how Kintone Plug-ins work & how they are structured.
 
 Table Numbering Plug-in automatically adds row numbers to table rows each time the record is saved. The numbers are inserted into a [Number field](https://get.kintone.help/k/en/user/app_settings/form/form_parts/number.html) in the [Table](https://get.kintone.help/k/en/user/app_settings/form/form_parts/field_table.html) and automatically re-number themselves when the record is edited & re-saved.
 
@@ -42,19 +42,29 @@ src/
 ### How to Use the Table Numbering Plug-in?
 To test out the Plug-in on your Kintone Subdomain, follow these steps:
 
-1. Download the [plugin.zip](1_Starting_Point/plugin.zip) file, located inside the `1_Starting_Point` folder.
-2. Install the Plug-in into your Kintone Subdomain from the
-    * ![Install Plugin Demo](img/Plugin_Install_Demo.gif)
-    * Reference: [Adding/Deleting Plug-Ins (System Administration)](https://get.kintone.help/k/en/admin/system_customization/add_plugin/plugin.html)
-3. Add the Plug-in to a specific Kintone App that has a [Table](https://get.kintone.help/k/en/user/app_settings/form/form_parts/field_table.html) with a [Number field](https://get.kintone.help/k/en/user/app_settings/form/form_parts/number.html).
-    * ![Plugin_Setup_Demo.gif](img/Plugin_Setup_Demo.gif)
-    * Reference: [Adding Plug-Ins to an App](https://get.kintone.help/k/en/user/app_settings/plugin.html)
+#### 1. Download the [plugin.zip](1_Starting_Point/plugin.zip) file, located inside the `1_Starting_Point` folder
+
+---
+
+#### 2. Install the Plug-in into your Kintone Subdomain from the Kintone Administration Setting
+Reference: [Adding/Deleting Plug-Ins (System Administration)](https://get.kintone.help/k/en/admin/system_customization/add_plugin/plugin.html)
+
+![Install Plugin Demo](img/Plugin_Install_Demo.gif)
+
+---
+
+#### 3. Add the Plug-in to a specific Kintone App that has a [Table](https://get.kintone.help/k/en/user/app_settings/form/form_parts/field_table.html) with a [Number field](https://get.kintone.help/k/en/user/app_settings/form/form_parts/number.html)
+Reference: [Adding Plug-Ins to an App](https://get.kintone.help/k/en/user/app_settings/plugin.html)
+
+![Plugin_Setup_Demo.gif](img/Plugin_Setup_Demo.gif)
 
 ---
 
 ## Goal!
 
 ## Getting Started
+
+---
 
 ## 🧩 What are Kintone Plug-ins?
 ![Plugin_Intro.png](img/Plugin_Intro.png)
@@ -64,6 +74,8 @@ Kintone Plug-ins are packaged JavaScript customization files that can be importe
   * Settings page files - Where the GUI settings page for end-users is stored.
 
 For more information on Kintone Plug-ins, refer to [About Kintone Plug-ins](https://developer.kintone.io/hc/en-us/articles/900005169443) article.
+
+---
 
 ## ⚙️ What is Kintone?
 
