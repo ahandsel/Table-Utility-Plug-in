@@ -64,7 +64,6 @@ The code inside [2_Goal_Point](2_Goal_Point/) folder contains the modified Plug-
   <img with="600" src="img/KDP_Signup_Part_2.gif" alt="Demo of Creating a Kintone Subdomain">
 </p>
 
-
 ---
 
 ## Starting Point
@@ -143,7 +142,7 @@ Compare your results ~
 
 ## What are Kintone Plug-ins? 🧩  
 
-<p align="center">
+<p style="text-align:center !important;">
   <img src="img/Plugin_Intro.png" alt="Setting Page Files + Customization Files = Kintone Plug-in">
 </p>
 
@@ -167,6 +166,6 @@ Add JavaScript, CSS, &/or HTML to enhance the frontend UI/UX of a Kintone App (W
 
 Read up on how to customize & develop on the Kintone Web Database platform at [developer.kintone.io](https://developer.kintone.io/)!
 
-<p align="center">
+<p style="text-align:center !important;">
   <img src="img/Kintone_Space_Demo.gif" alt="Table Numbering Plug-in Demo">
 </p>

@@ -19,15 +19,18 @@ Note: These instructions are also [viewable as slides](https://slides.trouni.com
 ## Files to not worry about
 
 ### Files to not touch at all
+
   * [**kintone-config-helper.js**](1_Starting_Point/src/js/kintone-config-helper.js)
+
   * [**51-modern-default.css**](1_Starting_Point/src/css/51-modern-default.css)
 
 ### Files that are optional to modify
+
   * [**manifest.json**](1_Starting_Point/src/manifest.json)
+
   * [**icon.png**](1_Starting_Point/src/image/icon.png)
 
 ---
-
 
 ## src/js/`desktop.js`
 [**desktop.js**](1_Starting_Point/src/js/desktop.js) contains the actual JavaScript customization that alters the Kintone App.
@@ -206,3 +209,9 @@ Call the `setDropDown` function three times for row-numbering, table-sorting, an
 ### Step 4 - Set the inputs when the form is submitted
 Save the button location, sort by field, ad sort order.
 ![Step 4 Difference](img/config.js_4.png)
+
+---
+
+## Looks Good!
+
+Now we just have to package the modified `src` folder into a Plug-in zip file and upload it to Kintone.
