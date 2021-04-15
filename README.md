@@ -138,23 +138,19 @@ Reference: [Adding Plug-Ins to an App](https://get.kintone.help/k/en/user/app_se
 
 ## What are Kintone Plug-ins? 🧩  
 
-|                           |                            |
-| ------------------------- | -------------------------- |
-| ![](img/Plugin_Intro.png) | ![](img/Plugin_Sample.gif) |
-
 <p align="center">
   <img src="img/Plugin_Intro.png" alt="Setting Page Files + Customization Files = Kintone Plug-in">
 </p>
 
 Kintone Plug-ins are packaged JavaScript customization files that can be imported into a Kintone environment & installed into any App (Web Database). Plug-ins provide an easy way for users to share & set up customizations.
-  * Customization files - Where the data manipulation & other customization is stored.
-  * Settings page files - Where the GUI settings page for end-users is stored.
+  - Customization files: Where the data manipulation & other customization is stored.
+  - Settings page files: Where the GUI settings page for end-users is stored.
 
 For more information on Kintone Plug-ins, refer to [About Kintone Plug-ins](https://developer.kintone.io/hc/en-us/articles/900005169443) article.
 
-<p align="center">
-  <img src="https://developer.kintone.io/hc/article_attachments/360018540974/sample001.gif" alt="Table Numbering Plug-in Demo">
-</p>
+<!-- |                           |                            |
+| ------------------------- | -------------------------- |
+| ![Setting Page Files + Customization Files = Kintone Plug-in](img/Plugin_Intro.png) | ![](img/Plugin_Sample.gif) | -->
 
 ---
 
