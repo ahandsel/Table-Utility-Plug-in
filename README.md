@@ -40,20 +40,29 @@ src/
 ---
 
 ### How to Use the Table Numbering Plug-in?
-To test out the Plug-in on your Kintone Subdomain, follow these steps:
+To test out the Plug-in on your Kintone Subdomain, follow three steps:
 
-Step 1. Download the [plugin.zip](1_Starting_Point/plugin.zip) file, located inside the `1_Starting_Point` folder  
+### Step 1
+Git clone this repository:
+
+```console
+git clone https://github.com/ahandsel/Table-Utility-Plug-in
+```
+
+Locate the [plugin.zip](1_Starting_Point/plugin.zip) file inside the `1_Starting_Point` folder  
+Path: `Table-Utility-Plug-in/1_Starting_Point/plugin.zip`
 
 ---
 
-#### Step 2. Install the Plug-in into your Kintone Subdomain from the Kintone Administration Setting  
+### Step 2
+Install the Plug-in into your Kintone Subdomain from the Kintone Administration Setting  
 Reference: [Adding/Deleting Plug-Ins (System Administration)](https://get.kintone.help/k/en/admin/system_customization/add_plugin/plugin.html)
 
 ![Install Plugin Demo](img/Plugin_Install_Demo.gif)
 
 ---
 
-#### Step 3
+### Step 3
 Add the Plug-in to a specific Kintone App that has a [Table](https://get.kintone.help/k/en/user/app_settings/form/form_parts/field_table.html) with a [Number field](https://get.kintone.help/k/en/user/app_settings/form/form_parts/number.html)  
 Reference: [Adding Plug-Ins to an App](https://get.kintone.help/k/en/user/app_settings/plugin.html)
 
