@@ -35,7 +35,7 @@ The code inside [2_Goal_Point](2_Goal_Point/) folder contains the modified Plug-
 ### Step 2: Sign Up for Kintone Developer Account (Website)
 
 <strong>
-  <p align="center" font-size="1.1em !important"><a href="https://bit.ly/KDP_signup">bit.ly/KDP_signup</a></p>
+  <p style="align:center;font-size:2em !important;"><a href="https://bit.ly/KDP_signup">bit.ly/KDP_signup</a></p>
 </strong>
 
   * ⚠ Do NOT use Safari
