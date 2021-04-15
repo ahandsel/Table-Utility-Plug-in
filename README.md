@@ -52,6 +52,7 @@ Reference: [Adding/Deleting Plug-Ins (System Administration)](https://get.kinton
 ![Install Plugin Demo](img/Plugin_Install_Demo.gif)
 
 ---
+
 #### Step 3
 Add the Plug-in to a specific Kintone App that has a [Table](https://get.kintone.help/k/en/user/app_settings/form/form_parts/field_table.html) with a [Number field](https://get.kintone.help/k/en/user/app_settings/form/form_parts/number.html)  
 Reference: [Adding Plug-Ins to an App](https://get.kintone.help/k/en/user/app_settings/plugin.html)
