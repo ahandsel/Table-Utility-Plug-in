@@ -71,7 +71,9 @@ Path: `Table-Utility-Plug-in/1_Starting_Point/plugin.zip`
 Install the Plug-in into your Kintone Subdomain from the Kintone Administration Setting  
 Reference: [Adding/Deleting Plug-Ins (System Administration)](https://get.kintone.help/k/en/admin/system_customization/add_plugin/plugin.html)
 
-![Install Plugin Demo](img/Plugin_Install_Demo.gif)
+<p align="center">
+  <img height="300" src="img/Plugin_Install_Demo.gif" alt="Install Plugin Demo">
+</p>
 
 ---
 
@@ -79,7 +81,9 @@ Reference: [Adding/Deleting Plug-Ins (System Administration)](https://get.kinton
 Add the Plug-in to a specific Kintone App that has a [Table](https://get.kintone.help/k/en/user/app_settings/form/form_parts/field_table.html) with a [Number field](https://get.kintone.help/k/en/user/app_settings/form/form_parts/number.html)  
 Reference: [Adding Plug-Ins to an App](https://get.kintone.help/k/en/user/app_settings/plugin.html)
 
-![Plugin_Setup_Demo.gif](img/Plugin_Setup_Demo.gif)
+<p align="center">
+  <img height="300" src="img/Plugin_Setup_Demo.gif" alt="Setup Plugin Demo">
+</p>
 
 ---
 
@@ -98,28 +102,37 @@ git clone https://github.com/ahandsel/Table-Utility-Plug-in
 We will be working off of the [Table Numbering Plug-in](https://developer.kintone.io/hc/en-us/articles/360012420813)'s code inside [1_Starting_Point](1_Starting_Point/) folder.
 
 ### Step 2 - Sign Up for Kintone Developer Account (Website)
-  * [bit.ly/KDP_signup](https://bit.ly/KDP_signup)
-    * ⚠ Do NOT use Safari
-    * ⚡Accept Cookies First
-    * ✅ Use Chrome & Firefox
 
-![KDP_Signup_Part_1.gif](img/KDP_Signup_Part_1.gif)
+  <h3 align="center"><a href="https://bit.ly/KDP_signup">bit.ly/KDP_signup</a></h3>
+
+  * ⚠ Do NOT use Safari
+  * ⚡Accept Cookies First
+  * ✅ Use Chrome & Firefox
+
+<p align="center">
+  <img height="400" src="img/KDP_Signup_Part_1.gif" alt="Demo of signing up for a Kintone Developer Account">
+</p>
 
 ---
 
 ### Step 3 - Create a Kintone Subdomain (Environment)
-  * [bit.ly/K_DevLic](http://bit.ly/K_DevLic)
-    * ⚡ Only use lowercase, numbers, & hyphens in your subdomain
-    * ⚠ Do not use uppercase nor special characters
 
-![KDP_Signup_Part_2.gif](img/KDP_Signup_Part_2.gif)
+  <h3 align="center"><a href="http://bit.ly/K_DevLic">bit.ly/K_DevLic</a></h3>
+
+  * ⚡ Only use lowercase, numbers, & hyphens in your subdomain
+  * ⚠ Do not use uppercase nor special characters
+
+<p align="center">
+  <img height="400" src="img/KDP_Signup_Part_2.gif" alt="Demo of Creating a Kintone Subdomain">
+</p>
 
 ---
 
 ## What are Kintone Plug-ins? 🧩  
-![Plugin_Intro.png](img/Plugin_Intro.png)
-<img src="img/Plugin_Intro.png" alt="Setting Page Files + Customization Files = Kintone Plug-in" class="center">
 
+<p align="center">
+  <img src="img/Plugin_Intro.png" alt="Setting Page Files + Customization Files = Kintone Plug-in">
+</p>
 
 Kintone Plug-ins are packaged JavaScript customization files that can be imported into a Kintone environment & installed into any App (Web Database). Plug-ins provide an easy way for users to share & set up customizations.
   * Customization files - Where the data manipulation & other customization is stored.
