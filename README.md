@@ -33,7 +33,7 @@ The code inside [2_Goal_Point](2_Goal_Point/) folder contains the modified Plug-
 ### Step 2: Sign Up for Kintone Developer Account (Website)
 
 <strong>
-  <p align="center" font-size="80%">
+  <p align="center" font-size="80px">
     <a href="https://bit.ly/KDP_signup">bit.ly/KDP_signup</a>
   </p>
   <ul>
@@ -50,8 +50,6 @@ The code inside [2_Goal_Point](2_Goal_Point/) folder contains the modified Plug-
 <p align="center">
   <img height="600" src="img/KDP_Signup_Part_1.gif" alt="Demo of signing up for a Kintone Developer Account">
 </p>
-
----
 
 ### Step 3: Create a Kintone Subdomain (Environment)
 
