@@ -14,7 +14,7 @@ Hello there, this repo contains all you need to follow along the Kintone Develop
 - [What are Kintone Plug-ins? 🧩](#what-are-kintone-plug-ins-)
 - [⚙️ What is Kintone?](#️-what-is-kintone)
 
-Note: These instructions are also [viewable as slides](https://slides.trouni.com/?src=ahandsel/Table-Utility-Plug-in#/).
+Note: These instructions are also [viewable as slides](https://slides.trouni.com/?src=ahandsel/Table-Utility-Plug-in&justify=left#/).
 
 ---
 
@@ -35,7 +35,7 @@ The code inside [2_Goal_Point](2_Goal_Point/) folder contains the modified Plug-
 ### Step 2: Sign Up for Kintone Developer Account (Website)
 
 <strong>
-  <p align="center" font-size="large"><a href="https://bit.ly/KDP_signup">bit.ly/KDP_signup</a></p>
+  <p align="center" font-size="1.1em !important"><a href="https://bit.ly/KDP_signup">bit.ly/KDP_signup</a></p>
 </strong>
 
   * ⚠ Do NOT use Safari
