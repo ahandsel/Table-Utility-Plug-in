@@ -1,17 +1,33 @@
 # LiveCoding Part 1 Steps
 
+Note: These instructions are also [viewable as slides](https://slides.trouni.com/?src=https://raw.githubusercontent.com/ahandsel/Table-Utility-Plug-in/main/Step_By_Step.md#/)
+
 ## File Breakdown
 
 | File                                 | Description                                              |
 | ------------------------------------ | -------------------------------------------------------- |
 | src/ **manifest.json**               | Plug-in files' outline; includes required fields array   |
 | src/css/ **51-modern-default.css**   | Kintone-like styling; Styles `kintoneplugin-`xyz classes |
+| src/image/ **icon.png**              | Icon for the Plug-in                                     |
 | src/html/ **config.html**            | GUI for the user to configure the Plug-in                |
 | src/js/ **config.js**                | Alters the JS customization based on user configuration  |
 | src/js/ **desktop.js**               | The actual JS customization: Sort & Insert row number    |
 | src/js/ **kintone-config-helper.js** | Library that provides Plug-in setting helper functions   |
 
 ---
+
+## Files to not worry about
+
+### Files to not touch at all
+  * [**kintone-config-helper.js**](1_Starting_Point/src/js/kintone-config-helper.js)
+  * [**51-modern-default.css**](1_Starting_Point/src/css/51-modern-default.css)
+
+### Files that are optional to modify
+  * [**manifest.json**](1_Starting_Point/src/manifest.json)
+  * [**icon.png**](1_Starting_Point/src/image/icon.png)
+
+---
+
 
 ## src/js/`desktop.js`
 [**desktop.js**](1_Starting_Point/src/js/desktop.js) contains the actual JavaScript customization that alters the Kintone App.
@@ -112,6 +128,57 @@ kintone.events.on(sortEvents, function (event) {
 
 ---
 
+## src/html/`config.html`
+[**config.html**](1_Starting_Point/src/html/config.html) generates the Plug-in settings page where the user can configure the Plug-in being set to a Kintone App. Vital information like the Number field to insert the row numbers into is configured here.
+
+
+### Step 1 - Add a drop-down menu to select the Blank Space field
+
+```html
+<label for="select_number_field" class="kintoneplugin-label">
+  Button Location
+</label>
+<p class="kintoneplugin-desc">
+  When editing a record, a sort button will be displayed in the selected Blank Space field.
+  Clicking the button will sort the Table rows by the selected fields.
+</p>
+<div class="kintoneplugin-select-outer">
+  <div class="kintoneplugin-select">
+    <select id="select-space-field" name="js-select-space-field">
+      <option value="">-----</option>
+    </select>
+  </div>
+</div>
+```
+
+
+### Step 2 - Add a drop-down menu to select the field to sort by & the order
+
+```html
+<label for="select_number_field" class="kintoneplugin-label">
+  Sorting Preference
+</label>
+<p class="kintoneplugin-desc">
+  Please select the field and the order to sort the Table rows by.
+</p>
+<div class="kintoneplugin-select-outer">
+  <div class="kintoneplugin-select">
+    <select id="select-sort-by" name="js-select-sort-by">
+      <option value="">-----</option>
+    </select>
+  </div>
+  <div class="kintoneplugin-select">
+    <select id="select-order-by" name="js-select-order-by">
+      <option value="">-----</option>
+      <option value="asc">Ascending</option>
+      <option value="desc">Descending</option>
+    </select>
+  </div>
+</div>
+```
+
+---
+
 ## src/js/`config.js`
 [**config.js**](1_Starting_Point/src/js/config.js) contains the script to get the user configuration, such as field codes needed to determine which fields to get data from and which to insert row numbers into.
 
@@ -124,18 +191,18 @@ We need to get the Space field, the sort-by field, and the order to sort the row
 
 ### Step 2 - Enhance the setDropDown function
 We are going from only getting one Number field to getting a Number field for row-numbering & table-sorting, Space field, and sort order. This means we need to generate three more drop-downs on the Plug-in configuration page.
-  - Add parameters to the setDropDown function: `dropdownField`, `fieldType`, `prop`
-  - Swap `'NUMBER'` to `fieldType` to reflect the parameter change.
-  - Set cases for Space field & Number fields
+  * Add parameters to the setDropDown function: `dropdownField`, `fieldType`, `prop`
+  * Swap `'NUMBER'` to `fieldType` to reflect the parameter change.
+  * Set cases for Space field & Number fields
 
 ![config.js_2](img/config.js_2.png)
 
 
 ### Step 3 - Call the setDropDown function
 Call the `setDropDown` function three times for row-numbering, table-sorting, and Space field inputs.
-![](img/config.js_3.png)
+![Step 3 Difference](img/config.js_3.png)
 
 
 ### Step 4 - Set the inputs when the form is submitted
 Save the button location, sort by field, ad sort order.
-![](img/config.js_4.png)
+![Step 4 Difference](img/config.js_4.png)
