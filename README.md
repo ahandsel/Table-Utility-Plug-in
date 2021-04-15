@@ -12,7 +12,7 @@ Hello there, this repo contains all you need to follow along the Kintone Develop
   - [How to Use the Table Numbering Plug-in?](#how-to-use-the-table-numbering-plug-in)
 - [Goal!](#goal)
 - [What are Kintone Plug-ins? 🧩](#what-are-kintone-plug-ins-)
-- [What is Kintone? ⚙️](#what-is-kintone-️)
+- [⚙️ What is Kintone?](#️-what-is-kintone)
 
 Note: These instructions are also [viewable as slides](https://slides.trouni.com/?src=ahandsel/Table-Utility-Plug-in#/).
 
@@ -29,6 +29,8 @@ git clone https://github.com/ahandsel/Table-Utility-Plug-in
 We will be working off of the [Table Numbering Plug-in](https://developer.kintone.io/hc/en-us/articles/360012420813)'s code inside [1_Starting_Point](1_Starting_Point/) folder.
 
 The code inside [2_Goal_Point](2_Goal_Point/) folder contains the modified Plug-in with the new sorting function.
+
+---
 
 ### Step 2: Sign Up for Kintone Developer Account (Website)
 
@@ -112,7 +114,7 @@ Install the Plug-in into your Kintone Subdomain from the Kintone Administration 
 Reference: [Adding/Deleting Plug-Ins (System Administration)](https://get.kintone.help/k/en/admin/system_customization/add_plugin/plugin.html)
 
 <p align="center">
-  <img width="500" src="img/Plugin_Install_Demo.gif" alt="Install Plugin Demo">
+  <img src="img/Plugin_Install_Demo.gif" alt="Install Plugin Demo">
 </p>
 
 ---
@@ -122,7 +124,7 @@ Add the Plug-in to a specific Kintone App that has a [Table](https://get.kintone
 Reference: [Adding Plug-Ins to an App](https://get.kintone.help/k/en/user/app_settings/plugin.html)
 
 <p align="center">
-  <img width="500" src="img/Plugin_Setup_Demo.gif" alt="Setup Plugin Demo">
+  <img src="img/Plugin_Setup_Demo.gif" alt="Setup Plugin Demo">
 </p>
 
 ---
@@ -145,7 +147,7 @@ For more information on Kintone Plug-ins, refer to [About Kintone Plug-ins](http
 
 ---
 
-## What is Kintone? ⚙️  
+## ⚙️ What is Kintone?  
 
 Kintone is a no-code/low-code cloud platform for teams to easily & effectively share and collaborate on their data.
 
