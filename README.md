@@ -133,7 +133,11 @@ Reference: [Adding Plug-Ins to an App](https://get.kintone.help/k/en/user/app_se
 
 ---
 
-## Goal
+## Goal Point
+
+After modifying the code as described in the [Step_By_Step.md](Step_By_Step.md), you should get something like the code in [2_Goal_Point](2_Goal_Point/)!
+
+Compare your results ~
 
 ---
 
