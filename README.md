@@ -48,7 +48,7 @@ The code inside [2_Goal_Point](2_Goal_Point/) folder contains the modified Plug-
   <img with="600" src="img/KDP_SignUp_Part_1.gif" alt="Demo of signing up for a Kintone Developer Account">
 </p>
 
-![](img/KDP_SignUp_Part_1.gif)
+![](/img/KDP_SignUp_Part_1.gif)
 
 ### Step 3: Create a Kintone Subdomain (Environment)
 
