@@ -3,16 +3,16 @@
 Hello there, this repo contains all you need to follow along the Kintone Developer Program (KDP)'s LiveCoding Table Utility Plug-in Series!
 
 ## Outline <!-- omit in toc -->
-- [Getting Started](#getting-started)
-  - [Step 1: Clone the Table-Utility-Plug-in Repo](#step-1-clone-the-table-utility-plug-in-repo)
-  - [Step 2: Sign Up for Kintone Developer Account (Website)](#step-2-sign-up-for-kintone-developer-account-website)
-  - [Step 3: Create a Kintone Subdomain (Environment)](#step-3-create-a-kintone-subdomain-environment)
-- [Starting Point](#starting-point)
-  - [Plug-in directory structure](#plug-in-directory-structure)
-- [How to Use the Table Numbering Plug-in?](#how-to-use-the-table-numbering-plug-in)
-- [Goal!](#goal)
-- [What are Kintone Plug-ins? 🧩](#what-are-kintone-plug-ins-)
-- [⚙️  What is Kintone?  ⚙️](#️--what-is-kintone--️)
+  - [Getting Started](#getting-started)
+    - [Step 1: Clone the Table-Utility-Plug-in Repo](#step-1-clone-the-table-utility-plug-in-repo)
+    - [Step 2: Sign Up for Kintone Developer Account (Website)](#step-2-sign-up-for-kintone-developer-account-website)
+    - [Step 3: Create a Kintone Subdomain (Environment)](#step-3-create-a-kintone-subdomain-environment)
+  - [Starting Point](#starting-point)
+    - [Plug-in directory structure](#plug-in-directory-structure)
+  - [How to Use the Table Numbering Plug-in?](#how-to-use-the-table-numbering-plug-in)
+  - [Goal!](#goal)
+  - [What are Kintone Plug-ins? 🧩](#what-are-kintone-plug-ins-)
+  - [⚙️  What is Kintone?  ⚙️](#️--what-is-kintone--️)
 
 Note: These instructions are also [viewable as slides](https://slides.trouni.com/?src=ahandsel/Table-Utility-Plug-in&justify=left#/).
 
@@ -40,12 +40,12 @@ The code inside [2_Goal_Point](2_Goal_Point/) folder contains the modified Plug-
   </p>
 </strong>
 
-  * ⚠ Do NOT use Safari
-  * ⚡Accept Cookies First
-  * ✅ Use Chrome & Firefox
+  - ⚠ Do NOT use Safari
+  - ⚡Accept Cookies First
+  - ✅ Use Chrome & Firefox
 
 <p align="center">
-  <img with="600" src="img/KDP_Signup_Part_1.gif" alt="Demo of signing up for a Kintone Developer Account">
+  <img with="600" src="img/KDP_SignUp_Part_1.gif" alt="Demo of signing up for a Kintone Developer Account">
 </p>
 
 
@@ -57,11 +57,11 @@ The code inside [2_Goal_Point](2_Goal_Point/) folder contains the modified Plug-
   </p>
 </strong>
 
-  * ⚡ Only use lowercase, numbers, & hyphens in your subdomain
-  * ⚠ Do not use uppercase nor special characters
+  - ⚡ Only use lowercase, numbers, & hyphens in your subdomain
+  - ⚠ Do not use uppercase nor special characters
 
 <p align="center">
-  <img with="600" src="img/KDP_Signup_Part_2.gif" alt="Demo of Creating a Kintone Subdomain">
+  <img with="600" src="img/KDP_SignUp_Part_2.gif" alt="Demo of Creating a Kintone Subdomain">
 </p>
 
 ---
@@ -132,7 +132,7 @@ Reference: [Adding Plug-Ins to an App](https://get.kintone.help/k/en/user/app_se
 
 ---
 
-## Goal!
+## Goal
 
 ---
 
