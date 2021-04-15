@@ -2,6 +2,19 @@
 
 Hello there, this repo contains all you need to follow along the Kintone Developer Program (KDP)'s LiveCoding Table Utility Plug-in Series!
 
+## Outline <!-- omit in toc -->
+- [LiveCoding: Table Utility Plug-in Series](#livecoding-table-utility-plug-in-series)
+  - [Starting Point](#starting-point)
+    - [Plug-in directory structure](#plug-in-directory-structure)
+    - [How to Use the Table Numbering Plug-in?](#how-to-use-the-table-numbering-plug-in)
+  - [Goal!](#goal)
+  - [Getting Started](#getting-started)
+    - [Step 1 - Clone the Table-Utility-Plug-in Repo](#step-1---clone-the-table-utility-plug-in-repo)
+    - [Step 2 - Sign Up for Kintone Developer Account (Website)](#step-2---sign-up-for-kintone-developer-account-website)
+    - [Step 3 - Create a Kintone Subdomain (Environment)](#step-3---create-a-kintone-subdomain-environment)
+  - [What are Kintone Plug-ins? 🧩](#what-are-kintone-plug-ins-)
+  - [What is Kintone? ⚙️](#what-is-kintone-️)
+
 Note: These instructions are also [viewable as slides](https://slides.trouni.com/?src=ahandsel/Table-Utility-Plug-in&justify=left#/).
 
 ---
@@ -42,7 +55,7 @@ src/
 ### How to Use the Table Numbering Plug-in?
 To test out the Plug-in on your Kintone Subdomain, follow three steps:
 
-### Step 1
+### Step 1 <!-- omit in toc -->
 Git clone this repository:
 
 ```console
@@ -54,7 +67,7 @@ Path: `Table-Utility-Plug-in/1_Starting_Point/plugin.zip`
 
 ---
 
-### Step 2
+### Step 2 <!-- omit in toc -->
 Install the Plug-in into your Kintone Subdomain from the Kintone Administration Setting  
 Reference: [Adding/Deleting Plug-Ins (System Administration)](https://get.kintone.help/k/en/admin/system_customization/add_plugin/plugin.html)
 
@@ -62,7 +75,7 @@ Reference: [Adding/Deleting Plug-Ins (System Administration)](https://get.kinton
 
 ---
 
-### Step 3
+### Step 3 <!-- omit in toc -->
 Add the Plug-in to a specific Kintone App that has a [Table](https://get.kintone.help/k/en/user/app_settings/form/form_parts/field_table.html) with a [Number field](https://get.kintone.help/k/en/user/app_settings/form/form_parts/number.html)  
 Reference: [Adding Plug-Ins to an App](https://get.kintone.help/k/en/user/app_settings/plugin.html)
 
@@ -75,6 +88,31 @@ Reference: [Adding Plug-Ins to an App](https://get.kintone.help/k/en/user/app_se
 ---
 
 ## Getting Started
+
+### Step 1 - Clone the Table-Utility-Plug-in Repo
+
+```console
+git clone https://github.com/ahandsel/Table-Utility-Plug-in
+```
+
+We will be working off of the [Table Numbering Plug-in](https://developer.kintone.io/hc/en-us/articles/360012420813)'s code inside [1_Starting_Point](1_Starting_Point/) folder.
+
+### Step 2 - Sign Up for Kintone Developer Account (Website)
+  * [bit.ly/KDP_signup](https://bit.ly/KDP_signup)
+    * ⚠ Do NOT use Safari
+    * ⚡Accept Cookies First
+    * ✅ Use Chrome & Firefox
+
+![KDP_Signup_Part_1.gif](img/KDP_Signup_Part_1.gif)
+
+---
+
+### Step 3 - Create a Kintone Subdomain (Environment)
+  * [bit.ly/K_DevLic](http://bit.ly/K_DevLic)
+    * ⚡ Only use lowercase, numbers, & hyphens in your subdomain
+    * ⚠ Do not use uppercase nor special characters
+
+![KDP_Signup_Part_2.gif](img/KDP_Signup_Part_2.gif)
 
 ---
 
