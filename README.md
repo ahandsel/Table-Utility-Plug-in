@@ -4,12 +4,49 @@ Hello there, this repo contains all you need to follow along the Kintone Develop
 
 ## Starting Point
 
+We are starting off with the [Table Numbering Plug-in](https://developer.kintone.io/hc/en-us/articles/360012420813). This is a sample Plug-in provided by Kintone to showcase how Kintone Plug-ins work & how they are structured.
+
+Table Numbering Plug-in automatically adds row numbers to table rows each time the record is saved. The numbers are inserted into a [Number field](https://get.kintone.help/k/en/user/app_settings/form/form_parts/number.html) in the [Table](https://get.kintone.help/k/en/user/app_settings/form/form_parts/field_table.html) and automatically re-number themselves when the record is edited & re-saved.
+
+### Plug-in directory structure
+The Table Numbering Plug-in is located inside the [1_Starting_Point](./1_Starting_Point/) folder and is structured as the following directory tree.
+
+```text
+src/  
+├── html/  
+│       └──── config.html  
+|
+├── css/  
+│       ├──── 51-modern-default.css  
+│       └──── config.css  
+|
+├── js/  
+│       ├──── config.js  
+│       └──── desktop.js  
+|
+├── image/  
+│       └──── icon.png  
+|
+└── manifest.json  
+```
+
+### How to Use the Table Numbering Plug-in?
+To test out the Plug-in on your Kintone Subdomain, follow these steps:
+
+1. Download the [plugin.zip](1_Starting_Point/plugin.zip) file, located inside the `1_Starting_Point` folder.
+2. Install the Plug-in into your Kintone Subdomain from the
+    * ![Install Plugin Demo](img/Plugin_Install_Demo.gif)
+    * Reference: [Adding/Deleting Plug-Ins (System Administration)](https://get.kintone.help/k/en/admin/system_customization/add_plugin/plugin.html)
+3. Add the Plug-in to a specific Kintone App that has a [Table](https://get.kintone.help/k/en/user/app_settings/form/form_parts/field_table.html) with a [Number field](https://get.kintone.help/k/en/user/app_settings/form/form_parts/number.html).
+    * ![Plugin_Setup_Demo.gif](img/Plugin_Setup_Demo.gif)
+    * Reference: [Adding Plug-Ins to an App](https://get.kintone.help/k/en/user/app_settings/plugin.html)
+
 ## Goal!
 
 ## Getting Started
 
 ## 🧩 What are Kintone Plug-ins?
-![Customization JS + Setting HTML = Plug-in](https://user-images.githubusercontent.com/30670749/114830268-045b8b00-9e07-11eb-835f-fcddf967cc82.png)
+![Plugin_Intro.png](img/Plugin_Intro.png)
 
 Kintone Plug-ins are packaged JavaScript customization files that can be imported into a Kintone environment & installed into any App (Web Database). Plug-ins provide an easy way for users to share & set up customizations.
   * Customization files - Where the data manipulation & other customization is stored.
