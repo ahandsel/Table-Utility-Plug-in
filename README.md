@@ -42,18 +42,18 @@ src/
 ### How to Use the Table Numbering Plug-in?
 To test out the Plug-in on your Kintone Subdomain, follow these steps:
 
-1. Download the [plugin.zip](1_Starting_Point/plugin.zip) file, located inside the `1_Starting_Point` folder  
+Step 1. Download the [plugin.zip](1_Starting_Point/plugin.zip) file, located inside the `1_Starting_Point` folder  
 
 ---
 
-2. Install the Plug-in into your Kintone Subdomain from the Kintone Administration Setting  
+#### Step 2. Install the Plug-in into your Kintone Subdomain from the Kintone Administration Setting  
 Reference: [Adding/Deleting Plug-Ins (System Administration)](https://get.kintone.help/k/en/admin/system_customization/add_plugin/plugin.html)
 
 ![Install Plugin Demo](img/Plugin_Install_Demo.gif)
 
 ---
-
-3. Add the Plug-in to a specific Kintone App that has a [Table](https://get.kintone.help/k/en/user/app_settings/form/form_parts/field_table.html) with a [Number field](https://get.kintone.help/k/en/user/app_settings/form/form_parts/number.html)  
+#### Step 3
+Add the Plug-in to a specific Kintone App that has a [Table](https://get.kintone.help/k/en/user/app_settings/form/form_parts/field_table.html) with a [Number field](https://get.kintone.help/k/en/user/app_settings/form/form_parts/number.html)  
 Reference: [Adding Plug-Ins to an App](https://get.kintone.help/k/en/user/app_settings/plugin.html)
 
 ![Plugin_Setup_Demo.gif](img/Plugin_Setup_Demo.gif)
@@ -62,11 +62,13 @@ Reference: [Adding Plug-Ins to an App](https://get.kintone.help/k/en/user/app_se
 
 ## Goal!
 
+---
+
 ## Getting Started
 
 ---
 
-## 🧩 What are Kintone Plug-ins?
+## What are Kintone Plug-ins? 🧩  
 ![Plugin_Intro.png](img/Plugin_Intro.png)
 
 Kintone Plug-ins are packaged JavaScript customization files that can be imported into a Kintone environment & installed into any App (Web Database). Plug-ins provide an easy way for users to share & set up customizations.
@@ -77,7 +79,7 @@ For more information on Kintone Plug-ins, refer to [About Kintone Plug-ins](http
 
 ---
 
-## ⚙️ What is Kintone?
+## What is Kintone? ⚙️  
 
 Kintone is a no-code/low-code cloud platform for teams to easily & effectively share and collaborate on their data.
 
