@@ -1,3 +1,5 @@
+/* Goal: config.css */
+
 .kintoneplugin-desc::first-letter {
     text-transform: capitalize;
 }

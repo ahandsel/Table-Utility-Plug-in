@@ -1,9 +1,5 @@
-/*
- * This sample plug-in automatically adds row numbers to table rows each time the record is saved.
- * Copyright (c) 2018 Cybozu
- *
- * Licensed under the MIT License
- */
+/* Starting_Point: desktop.js */
+
 (function (PLUGIN_ID) {
   'use strict';
 
