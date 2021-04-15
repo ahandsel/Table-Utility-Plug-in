@@ -30,8 +30,6 @@ We will be working off of the [Table Numbering Plug-in](https://developer.kinton
 
 The code inside [2_Goal_Point](2_Goal_Point/) folder contains the modified Plug-in with the new sorting function.
 
----
-
 ### Step 2: Sign Up for Kintone Developer Account (Website)
 
 <strong>
