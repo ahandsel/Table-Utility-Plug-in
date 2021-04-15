@@ -115,7 +115,7 @@ kintone.events.on(sortEvents, function (event) {
   var $button = kintone.app.record.getSpaceElement(BUTTONFIELD);
   $('<input>').attr({
     type: 'button',
-    value: 'sort',
+    value: 'Sort',
     id: 'sort'
   }).appendTo($button);
   $('#sort').click(sorting);
