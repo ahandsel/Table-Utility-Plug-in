@@ -1,33 +1,29 @@
-# LiveCoding Part 1 Steps
+# Steps add the sorting function to Table Numbering Plug-in
 
 Note: These instructions are also [viewable as slides](https://slides.trouni.com/?src=https://raw.githubusercontent.com/ahandsel/Table-Utility-Plug-in/main/Step_By_Step.md#/)
 
 ## File Breakdown
 
-| File                                 | Description                                              |
-| ------------------------------------ | -------------------------------------------------------- |
-| src/ **manifest.json**               | Plug-in files' outline; includes required fields array   |
-| src/css/ **51-modern-default.css**   | Kintone-like styling; Styles `kintoneplugin-`xyz classes |
-| src/image/ **icon.png**              | Icon for the Plug-in                                     |
-| src/html/ **config.html**            | GUI for the user to configure the Plug-in                |
-| src/js/ **config.js**                | Alters the JS customization based on user configuration  |
-| src/js/ **desktop.js**               | The actual JS customization: Sort & Insert row number    |
-| src/js/ **kintone-config-helper.js** | Library that provides Plug-in setting helper functions   |
+| File                                 | Description                                                |
+| ------------------------------------ | ---------------------------------------------------------- |
+| src/ **manifest.json**               | Outlines the Plug-in files; includes required fields array |
+| src/css/ **51-modern-default.css**   | Kintone-like styling; Styles `kintoneplugin-`xyz classes   |
+| src/image/ **icon.png**              | Icon for the Plug-in                                       |
+| src/html/ **config.html**            | GUI for the user to configure the Plug-in                  |
+| src/js/ **config.js**                | Alters the JS customization based on user configuration    |
+| src/js/ **desktop.js**               | The actual JS customization: Sort & Insert row number      |
+| src/js/ **kintone-config-helper.js** | Library that provides Plug-in setting helper functions     |
 
 ---
 
 ## Files to not worry about
 
-### Files to not touch at all
-
+Do not modify the following files:
   * [**kintone-config-helper.js**](1_Starting_Point/src/js/kintone-config-helper.js)
-
   * [**51-modern-default.css**](1_Starting_Point/src/css/51-modern-default.css)
 
-### Files that are optional to modify
-
+Optional files to modify:
   * [**manifest.json**](1_Starting_Point/src/manifest.json)
-
   * [**icon.png**](1_Starting_Point/src/image/icon.png)
 
 ---
@@ -36,7 +32,7 @@ Note: These instructions are also [viewable as slides](https://slides.trouni.com
 [**desktop.js**](1_Starting_Point/src/js/desktop.js) contains the actual JavaScript customization that alters the Kintone App.
 
 
-### Step 1 - Setup desktop.js for the new inputs and activate jQuery
+### Step 1 - Setup desktop.js for the new inputs and jQuery
 
 ```javascript
 (function ($, PLUGIN_ID) {
@@ -53,8 +49,7 @@ Get three values from user configuration.
 var sortEvents, BUTTONFIELD, SORT_BY, ORDER_BY;
 ```
 
-![desktop.js_1](img/desktop.js_1.png)
-
+<!-- ![desktop.js_1](img/desktop.js_1.png) -->
 
 ### Step 2 - Prepping
 First, set the Events with the sorting function should take place.
