@@ -289,10 +289,12 @@ $form.on('submit', function (e) {
 ...
 ![Comparing config.js Part 5](img/config.js_5.png)  
 
-
 ---
 
 ## Optional files to modify
+
+### src/image/`icon.png`
+Change the [**icon.png**](1_Starting_Point/src/image/icon.png) with the icon of your choice.
 
 ### src/`manifest.json`
 [**manifest.json**](1_Starting_Point/src/manifest.json) outlines the Plug-in files.  
@@ -312,11 +314,12 @@ Also, if filenames have been changed or additional JavaScript libraries want to 
 }
 ```
 
-### src/image/`icon.png`
-Change the [**icon.png**](1_Starting_Point/src/image/icon.png) with the icon of your choice.
-
 ---
 
 ## Looks Good!
 
 Now we just have to package the modified `src` folder into a Plug-in zip file and upload it to Kintone.
+
+For steps on packaging & uploading a Plug-in into Kintone, check out [Developer_Tools.md](Developer_Tools.md) file.
+
+Or view the steps as a slide: [Developer Tools slide](https://slides.trouni.com/?src=https://raw.githubusercontent.com/ahandsel/Table-Utility-Plug-in/main/Developer_Tools.md#/)
