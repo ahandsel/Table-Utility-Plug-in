@@ -205,7 +205,11 @@ Do not modify them.
 ### Step 1 - Get the User Configuration
 We need to get the Space field, the sort-by field, and the order to sort the rows by. The [config.html](1_Starting_Point/src/html/config.html)
 
-![config.js_1](img/config.js_1.png)
+```javascript
+  var $sortButton = $('select[name="js-select-space-field"]');
+  var $sortBy = $('select[name="js-select-sort-by"]');
+  var $sortOrder = $('select[name="js-select-order-by"]');
+```
 
 
 ### Step 2 - Enhance the setDropDown function
@@ -214,17 +218,77 @@ We are going from only getting one Number field to getting a Number field for ro
   * Swap `'NUMBER'` to `fieldType` to reflect the parameter change.
   * Set cases for Space field & Number fields
 
-![config.js_2](img/config.js_2.png)
+```javascript
+function setDropDown(dropdownField, fieldType, prop) {
+  var $option = $('<option>');
+```
+
+```javascript
+// Retrieve field options, then set drop-down
+return KintoneConfigHelper.getFields(fieldType)
+  .then(function (resp) {
+    resp.forEach(function (field) {
+      switch (field.type) {
+        case 'SPACER':
+          // Set Table code and Number field code
+          $option.attr('value', field.elementId); 
+          $option.text(escapeHtml(field.elementId));
+          dropdownField.append($option.clone());
+          // Set default values
+          dropdownField.val(CONF[prop]);
+          break;
+        default:
+          if (field.subtableCode) {
+            // Set Table code and Number field code
+            $option.attr('value', field.subtableCode + ',' + field.code);
+            $option.text(escapeHtml(field.label));
+            dropdownField.append($option.clone());
+            // Set default values
+            dropdownField.val(CONF.table + ',' + CONF[prop]);
+          }
+      }
+    });
+```
 
 
 ### Step 3 - Call the setDropDown function
 Call the `setDropDown` function three times for row-numbering, table-sorting, and Space field inputs.
-![Step 3 Difference](img/config.js_3.png)
 
+```javascript
+$(document).ready(function () {
+
+  // Set drop-down list
+  setDropDown($number, ['NUMBER'], 'number');
+  setDropDown($sortButton, ['SPACER'], 'button');
+  setDropDown($sortBy, ['NUMBER', 'SINGLE_LINE_TEXT', 'DATE'], 'sortBy');
+```
 
 ### Step 4 - Set the inputs when the form is submitted
-Save the button location, sort by field, ad sort order.
-![Step 4 Difference](img/config.js_4.png)
+Inside the `$form.on(...);` add variables for button location, sort by field, and sort order. We want to save the information when the 'Save' button is clicked.
+
+```javascript
+$form.on('submit', function (e) {
+  var config = [];
+  var number = $number.val();
+
+  var button = $sortButton.val();
+  var sortBy = $sortBy.val();
+  var sortOrder = $sortOrder.val();
+
+  e.preventDefault();
+```
+
+
+### Visual Comparison
+
+![Comparing config.js Part 1](img/config.js_1.png)  
+...
+![Comparing config.js Part 2](img/config.js_2.png)  
+![Comparing config.js Part 3](img/config.js_3.png)  
+![Comparing config.js Part 4](img/config.js_4.png)  
+...
+![Comparing config.js Part 5](img/config.js_5.png)  
+
 
 ---
 
