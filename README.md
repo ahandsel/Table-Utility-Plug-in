@@ -14,7 +14,7 @@ Hello there, this repo contains all you need to follow along the Kintone Develop
   - What are Kintone Plug-ins? 🧩
   - ⚙️  What is Kintone?  ⚙️
 
-Note: These instructions are also [viewable as slides](https://slides.trouni.com/?src=ahandsel/Table-Utility-Plug-in&justify=left#/).
+Note: These instructions are also [viewable as slides](https://slides.trouni.com/?src=ahandsel/Table-Utility-Plug-in&justify=left#/). 🎦
 
 ---
 
