@@ -1,6 +1,6 @@
-# Steps add the sorting function to Table Numbering Plug-in
+# Steps for adding the sorting function to Table Numbering Plug-in
 
-Note: These instructions are also [viewable as slides](https://slides.trouni.com/?src=https://raw.githubusercontent.com/ahandsel/Table-Utility-Plug-in/main/Step_By_Step.md#/)
+Note: These instructions are also [viewable as slides](https://slides.trouni.com/?src=https://raw.githubusercontent.com/ahandsel/Table-Utility-Plug-in/main/Step_By_Step.md#/) 🎦
 
 ## File Breakdown
 
@@ -16,23 +16,13 @@ Note: These instructions are also [viewable as slides](https://slides.trouni.com
 
 ---
 
-## Files to not worry about
-
-Do not modify the following files:
-  * [**kintone-config-helper.js**](1_Starting_Point/src/js/kintone-config-helper.js)
-  * [**51-modern-default.css**](1_Starting_Point/src/css/51-modern-default.css)
-
-Optional files to modify:
-  * [**manifest.json**](1_Starting_Point/src/manifest.json)
-  * [**icon.png**](1_Starting_Point/src/image/icon.png)
-
----
-
-## src/js/`desktop.js`
+## src/js/`desktop.js` - Customization
 [**desktop.js**](1_Starting_Point/src/js/desktop.js) contains the actual JavaScript customization that alters the Kintone App.
 
 
-### Step 1 - Setup desktop.js for the new inputs and jQuery
+### Step 1 - Incorporating jQuery
+
+Adding support for jQuery, a JavaScript library designed to simplify HTML DOM tree traversal & manipulation.
 
 ```javascript
 (function ($, PLUGIN_ID) {
@@ -42,17 +32,16 @@ Optional files to modify:
 })(jQuery, kintone.$PLUGIN_ID);
 ```
 
-Declare an array to store Events when sorting takes place.
+### Step 2 - Kintone Events & User Input
+
+Declare an array to store Kintone Events when sorting should take place.  
 Get three values from user configuration.
 
 ```javascript
 var sortEvents, BUTTONFIELD, SORT_BY, ORDER_BY;
 ```
 
-<!-- ![desktop.js_1](img/desktop.js_1.png) -->
-
-### Step 2 - Prepping
-First, set the Events with the sorting function should take place.
+Now set the Kintone Events in line with the sorting function should take place.  
 Then get the button, sortBy, and sortOrder from user configuration.
 
 ```javascript
@@ -66,10 +55,8 @@ SORT_BY = CONFIG.sortBy;
 ORDER_BY = CONFIG.sortOrder;
 ```
 
-![desktop.js_2](img/desktop.js_2.png)
 
-
-#### Setting up a sorting() function
+### Step 3 - Setting up a sorting() function
 
 Get the record and set the record
 
@@ -84,7 +71,7 @@ function sorting() {
 ```
 
 
-#### Sort the Table by the selected field's value
+### Step 4 - Sort the Table by the selected field's value
 
 ```javascript
 obj.record[TABLEFIELD].value.sort(function (a, b) {
@@ -101,10 +88,8 @@ obj.record[TABLEFIELD].value.sort(function (a, b) {
 });
 ```
 
-![desktop.js_3](img/desktop.js_3.png)
 
-
-#### Button Trigger
+### Step 5 - Button Trigger
 
 ```javascript
 kintone.events.on(sortEvents, function (event) {
@@ -122,7 +107,33 @@ kintone.events.on(sortEvents, function (event) {
 });
 ```
 
-![desktop.js_4](img/desktop.js_4.png)
+
+### Visual Comparison
+
+Line 1 ~ 18
+![Comparing desktop.js Part A](img/Compare_desktopjs_A.png)  
+
+Line 51 ~ 99
+![Comparing desktop.js Part B](img/Compare_desktopjs_B.png)  
+
+---
+
+## Plug-in Development Helper
+
+Follow two files are helper files to simplify Plug-in development.  
+Do not modify them.
+
+
+### Kintone Config Helper
+  * [**kintone-config-helper.js**](1_Starting_Point/src/js/kintone-config-helper.js) is a JavaScript library that supports the development of Kintone plug-ins.
+  * It provides methods to retrieve field data from Apps, which are used for creating components in the plug-in config page.
+  * Details: [Introduction to Kintone Config Helper](https://developer.kintone.io/hc/en-us/articles/360015822513) article.
+
+
+### Stylesheet to make Kintone-like UI
+  * [**51-modern-default.css**](1_Starting_Point/src/css/51-modern-default.css) is a CSS for designing a Kintone-like UI.
+  * Plug-in Stylesheet Guide to reproduce the DOM structure of the checkbox component in the JavaScript code.
+  * Details: [Plug-in settings stylesheet guide](https://developer.kintone.io/hc/en-us/articles/212494718)
 
 ---
 
@@ -131,6 +142,8 @@ kintone.events.on(sortEvents, function (event) {
 
 
 ### Step 1 - Add a drop-down menu to select the Blank Space field
+
+`class="kintoneplugin-...` is added to use **kintone-config-helper.js**.
 
 ```html
 <label for="select_number_field" class="kintoneplugin-label">
@@ -175,6 +188,9 @@ kintone.events.on(sortEvents, function (event) {
 </div>
 ```
 
+### Visual Comparison
+
+
 ---
 
 ## src/js/`config.js`
@@ -204,6 +220,12 @@ Call the `setDropDown` function three times for row-numbering, table-sorting, an
 ### Step 4 - Set the inputs when the form is submitted
 Save the button location, sort by field, ad sort order.
 ![Step 4 Difference](img/config.js_4.png)
+
+---
+
+## Optional files to modify
+  * [**manifest.json**](1_Starting_Point/src/manifest.json)
+  * [**icon.png**](1_Starting_Point/src/image/icon.png)
 
 ---
 
