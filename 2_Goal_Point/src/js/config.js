@@ -10,7 +10,6 @@ jQuery.noConflict();
   var $cancelButton = $('.js-cancel-button');
   var $number = $('select[name="js-select-number-field"]');
 
-  //
   var $sortButton = $('select[name="js-select-space-field"]');
   var $sortBy = $('select[name="js-select-sort-by"]');
   var $sortOrder = $('select[name="js-select-order-by"]');
