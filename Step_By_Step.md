@@ -2,6 +2,8 @@
 
 Note: These instructions are also [viewable as slides](https://slides.trouni.com/?src=https://raw.githubusercontent.com/ahandsel/Table-Utility-Plug-in/main/Step_By_Step.md#/) 🎦
 
+---
+
 ## File Breakdown
 
 | File                                 | Description                                                |
@@ -31,6 +33,7 @@ Adding support for jQuery, a JavaScript library designed to simplify HTML DOM tr
 
 })(jQuery, kintone.$PLUGIN_ID);
 ```
+
 
 ### Step 2 - Kintone Events & User Input
 
@@ -188,8 +191,10 @@ Do not modify them.
 </div>
 ```
 
+
 ### Visual Comparison
 
+![Comparing config.html](img/Compare_configHTML.png)  
 
 ---
 
