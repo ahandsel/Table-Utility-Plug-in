@@ -293,8 +293,27 @@ $form.on('submit', function (e) {
 ---
 
 ## Optional files to modify
-  * [**manifest.json**](1_Starting_Point/src/manifest.json)
-  * [**icon.png**](1_Starting_Point/src/image/icon.png)
+
+### src/`manifest.json`
+[**manifest.json**](1_Starting_Point/src/manifest.json) outlines the Plug-in files.  
+This is where Plug-in names, description, and URL is set.
+Also, if filenames have been changed or additional JavaScript libraries want to be used, update the file structure and CDN links to match the changes.
+
+```json
+  "name": {
+    "en": "Table Numbering Plug-in"
+  },
+  "description": {
+    "en": "This sample plug-in automatically adds row numbers to table rows each time the record is saved."
+  },
+  "homepage_url": {
+    "en": "https://developer.kintone.io/hc/en-us/articles/360012420813"
+  }
+}
+```
+
+### src/image/`icon.png`
+Change the [**icon.png**](1_Starting_Point/src/image/icon.png) with the icon of your choice.
 
 ---
 
