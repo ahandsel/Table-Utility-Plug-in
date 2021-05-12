@@ -44,7 +44,6 @@ $ kintone-plugin-packer [OPTIONS] src
 ## Plug-in Uploader 📡
 
 [@kintone/plugin-uploader](https://github.com/kintone/js-sdk/tree/master/packages/plugin-uploader) is a CLI tool to upload Plug-in zip files from your Desktop to Kintone easily.  
-
 For more information, refer to [Uploading Plug-In Files Using plugin-uploader](https://developer.kintone.io/hc/en-us/articles/360009830414) article.
 
 ### How to Install
