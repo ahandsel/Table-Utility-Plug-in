@@ -93,7 +93,7 @@ set-item "env:KINTONE_PASSWORD" <user password>
 
 Command prompt execution  
 
-```PowerShell
+```sh
 $ cd 1_Starting_Point
 
 $ kintone-plugin-uploader plugin.zip
