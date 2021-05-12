@@ -1,4 +1,5 @@
 # Developer Tools
+Let's go over the two tools that make developing Kintone Plug-in easier!
 
 Note:
 
@@ -12,8 +13,8 @@ These instructions are also [viewable as slides](https://slides.trouni.com/?src=
 
 [@kintone/plugin-packer](https://github.com/kintone/js-sdk/tree/master/packages/plugin-packer) & [@kintone/plugin-uploader](https://github.com/kintone/js-sdk/tree/master/packages/plugin-uploader) are Command-Line Interface (CLI) tools for packaging & uploading Kintone Plug-ins to your Kintone Subdomain (Environment).
 
-Both tools are published on npm and is available for Windows, macOS, & Linux. Their source code is on [kintone/js-sdk](https://github.com/kintone/js-sdk) GitHub Repo.  
-Both requires Node.js version 6 or later.
+Both tools are published on npm and are available for Windows, macOS, & Linux. Their source code is on [kintone/js-sdk](https://github.com/kintone/js-sdk) GitHub Repo.  
+Both require Node.js version 6 or later.
 
 If you have any questions regarding developing for the Kintone Web Database platform, post them on the Kintone Developer Program's [General Discussion thread](https://developer.kintone.io/hc/en-us/community/topics/200378107-General-Discussion).
 
@@ -37,14 +38,15 @@ $ kintone-plugin-packer [OPTIONS] src
 | OPTIONS             | Description                                  |
 | ------------------- | -------------------------------------------- |
 | `--ppk PPK_FILE`    | Optional path to an input private key file.  |
-| `--out PLUGIN_FILE` | Optional path for the generated plugin file. |
+| `--out PLUGIN_FILE` | Optional path for the generated Plug-in file. |
 | `--watch`           | Watch `src` folder for changes.              |
 
 ---
 
 ## Plug-in Uploader 📡
 
-[@kintone/plugin-uploader](https://github.com/kintone/js-sdk/tree/master/packages/plugin-uploader) is a CLI tool to easily upload Plug-in zip files from your Desktop to Kintone.  
+[@kintone/plugin-uploader](https://github.com/kintone/js-sdk/tree/master/packages/plugin-uploader) is a CLI tool to upload Plug-in zip files from your Desktop to Kintone easily.  
+
 
 For more information, refer to [Uploading Plug-In Files Using plugin-uploader](https://developer.kintone.io/hc/en-us/articles/360009830414) article.
 
@@ -56,7 +58,7 @@ $ npm install -g @kintone/plugin-uploader
 
 
 ### How to Use | Dialog Style Login Method
-Specifying only the plug-in zip file in the command will prompt a dialog.
+Specifying only the Plug-in zip file in the command will prompt a dialog.
 Input the Kintone subdomain, login name, and password individually.
 
 ```sh
@@ -64,7 +66,7 @@ $ cd 1_Starting_Point
 $ kintone-plugin-uploader plugin.zip
 ```
 
-Enter environmental information interactively
+Enter environmental information interactively:
 
 ```console
 ? Input your kintone's domain (example.kintone.com): <subdomain>.kintone.com
@@ -83,7 +85,8 @@ Environment variables for the Kintone subdomain and login information can be set
 
 
 #### For Windows/ [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/overview)
-Set environment variables with Kintone information in advance by entering the following command in your PowerShell.
+
+Set environment variables with Kintone information in advance by entering the following command in your PowerShell:
 
 ```PowerShell
 set-item "env:KINTONE_BASE_URL" <subdomain>.kintone.com
@@ -91,7 +94,7 @@ set-item "env:KINTONE_USERNAME" <user name>
 set-item "env:KINTONE_PASSWORD" <user password>
 ```
 
-Command prompt execution  
+Command prompt execution:  
 
 ```sh
 $ cd 1_Starting_Point
@@ -101,7 +104,8 @@ $ kintone-plugin-uploader plugin.zip
 
 
 #### For Mac/ [Terminal](https://support.apple.com/guide/terminal/welcome/mac)
-Set environment variables with Kintone information in advance by entering the following command in your Terminal.
+
+Set environment variables with Kintone information in advance by entering the following command in your Terminal:
 
 ```sh
 $ export KINTONE_BASE_URL=<subdomain>.kintone.com
@@ -109,7 +113,7 @@ $ export KINTONE_USERNAME=<user name>
 $ export KINTONE_PASSWORD=<user password>
 ```
 
-Terminal execution  
+Terminal execution:  
 
 ```sh
 $ cd 1_Starting_Point
@@ -123,7 +127,7 @@ Open 2x terminals and follow the below examples.
 
 ### Terminal 1
 Run plugin-packer with watch option.  
-A plugin.zip file is created to monitor changes to the `src` directory.
+A `plugin.zip` file is created to monitor changes to the `src` directory.
 
 ```sh
 $ cd 1_Starting_Point
@@ -133,11 +137,11 @@ $ kintone-plugin-packer --watch src
 
 #### Terminal 2
 Run plugin-uploader with watch option.  
-The Plug-in file is uploaded to monitor changes to the `src` directory
+The Plug-in file is uploaded to monitor changes to the `src` directory.
 
 ```sh
 $ cd 1_Starting_Point
 $ kintone-plugin-uploader --watch plugin.zip
 ```
 
-Once the above set up is complete, modifications to the Plug-in's source code will automatically be zipped & uploaded to Kintone. Changes are visible with a simple page refresh.
+Once the above setup is complete, modifications to the Plug-in's source code will automatically be zipped & uploaded to Kintone. Changes are visible with a simple page refresh.
