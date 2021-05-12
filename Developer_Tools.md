@@ -82,9 +82,8 @@ Enter environmental information interactively:
 
 
 ### How to Use | Environment Variables Login Method
-Environment variables for the Kintone subdomain and login information can be set in advance. Let's save time by not inputting login information per Plug-in upload.
-
-Options:
+Environment variables for the Kintone subdomain and login information can be set in advance. Let's save time by not inputting login information per Plug-in upload.  
+There are two options:
   * [For Windows/ PowerShell](#for-windows-powershell)
   * [For Mac/ Terminal](#for-mac-terminal)
 
