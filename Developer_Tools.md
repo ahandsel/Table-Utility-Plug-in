@@ -6,6 +6,8 @@ These instructions are also [viewable as slides](https://slides.trouni.com/?src=
 
 `1_Starting_Point` folder is a stand-in for any folder containing the Plug-in file.
 
+---
+
 ## Overview
 
 [@kintone/plugin-packer](https://github.com/kintone/js-sdk/tree/master/packages/plugin-packer) & [@kintone/plugin-uploader](https://github.com/kintone/js-sdk/tree/master/packages/plugin-uploader) are Command-Line Interface (CLI) tools for packaging & uploading Kintone Plug-ins to your Kintone Subdomain (Environment).
@@ -17,13 +19,13 @@ If you have any questions regarding developing for the Kintone Web Database plat
 
 ---
 
-### Plug-in Packer 📩
+## Plug-in Packer 📩
 
 [@kintone/plugin-packer](https://github.com/kintone/js-sdk/tree/master/packages/plugin-packer) is a CLI tool that packages the Plug-in directory to generate Plug-in zip files.  
 
 For more information, refer to [Packaging Plug-In Files Using plugin-packer](https://developer.kintone.io/hc/en-us/articles/360008906274) article.
 
-#### How to Install & Use
+### How to Install & Use
 
 ```sh
 $ npm install -g @kintone/plugin-packer
@@ -40,17 +42,18 @@ $ kintone-plugin-packer [OPTIONS] src
 
 ---
 
-### Plug-in Uploader 📡
+## Plug-in Uploader 📡
 
 [@kintone/plugin-uploader](https://github.com/kintone/js-sdk/tree/master/packages/plugin-uploader) is a CLI tool to easily upload Plug-in zip files from your Desktop to Kintone.  
 
 For more information, refer to [Uploading Plug-In Files Using plugin-uploader](https://developer.kintone.io/hc/en-us/articles/360009830414) article.
 
-#### How to Install
+### How to Install
 
 ```sh
 $ npm install -g @kintone/plugin-uploader
 ```
+
 
 ### How to Use | Dialog Style Login Method
 Specifying only the plug-in zip file in the command will prompt a dialog.
@@ -74,8 +77,10 @@ Enter environmental information interactively
 > plugin.zip has been uploaded!
 ```
 
+
 ### How to Use | Environment Variables Login Method
 Environment variables for the Kintone subdomain and login information can be set in advance. Let's save time by not inputting login information per Plug-in upload.
+
 
 #### For Windows/ [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/overview)
 Set environment variables with Kintone information in advance by entering the following command in your PowerShell.
@@ -93,6 +98,7 @@ $ cd 1_Starting_Point
 
 $ kintone-plugin-uploader plugin.zip
 ```
+
 
 #### For Mac/ [Terminal](https://support.apple.com/guide/terminal/welcome/mac)
 Set environment variables with Kintone information in advance by entering the following command in your Terminal.
@@ -112,10 +118,10 @@ $ kintone-plugin-uploader plugin.zip
 
 ---
 
-### Using plugin-packer & plugin-uploader Together
+## Using plugin-packer & plugin-uploader Together
 Open 2x terminals and follow the below examples.
 
-#### Terminal 1
+### Terminal 1
 Run plugin-packer with watch option.  
 A plugin.zip file is created to monitor changes to the `src` directory.
 
@@ -123,6 +129,7 @@ A plugin.zip file is created to monitor changes to the `src` directory.
 $ cd 1_Starting_Point
 $ kintone-plugin-packer --watch src
 ```
+
 
 #### Terminal 2
 Run plugin-uploader with watch option.  
