@@ -7,8 +7,6 @@ These instructions are also [viewable as slides](https://slides.trouni.com/?src=
 
 `1_Starting_Point` folder is a stand-in for any folder containing the Plug-in file.
 
----
-
 ## Overview
 
 [@kintone/plugin-packer](https://github.com/kintone/js-sdk/tree/master/packages/plugin-packer) & [@kintone/plugin-uploader](https://github.com/kintone/js-sdk/tree/master/packages/plugin-uploader) are Command-Line Interface (CLI) tools for packaging & uploading Kintone Plug-ins to your Kintone Subdomain (Environment).
@@ -46,7 +44,6 @@ $ kintone-plugin-packer [OPTIONS] src
 ## Plug-in Uploader 📡
 
 [@kintone/plugin-uploader](https://github.com/kintone/js-sdk/tree/master/packages/plugin-uploader) is a CLI tool to upload Plug-in zip files from your Desktop to Kintone easily.  
-
 
 For more information, refer to [Uploading Plug-In Files Using plugin-uploader](https://developer.kintone.io/hc/en-us/articles/360009830414) article.
 
@@ -135,7 +132,7 @@ $ kintone-plugin-packer --watch src
 ```
 
 
-#### Terminal 2
+### Terminal 2
 Run plugin-uploader with watch option.  
 The Plug-in file is uploaded to monitor changes to the `src` directory.
 
