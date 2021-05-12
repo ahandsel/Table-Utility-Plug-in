@@ -88,6 +88,7 @@ There are two options:
   * [For Mac/ Terminal](#for-mac-terminal)
 
 
+
 #### For Windows/ [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/overview)
 
 Set environment variables with Kintone information in advance by entering the following command in your PowerShell:
