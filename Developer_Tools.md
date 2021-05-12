@@ -1,11 +1,16 @@
 # Developer Tools
 Let's go over the two tools that make developing Kintone Plug-in easier!
 
+Topics:
+  * [Plug-in Packer 📩](#plug-in-packer-)
+  * [Plug-in Uploader 📡](#plug-in-uploader-)
+    * [How to Use | Dialog Style Login Method](#how-to-use--dialog-style-login-method)
+    * [How to Use | Environment Variables Login Method](#how-to-use--environment-variables-login-method)
+  * [Using plugin-packer & plugin-uploader Together](#using-plugin-packer--plugin-uploader-together)
+
 Note:
-
-These instructions are also [viewable as slides](https://slides.trouni.com/?src=https://raw.githubusercontent.com/ahandsel/Table-Utility-Plug-in/main/Developer_Tools.md#/)
-
-`1_Starting_Point` folder is a stand-in for any folder containing the Plug-in file.
+  * These instructions are also [viewable as slides](https://slides.trouni.com/?src=https://raw.githubusercontent.com/ahandsel/Table-Utility-Plug-in/main/Developer_Tools.md#/)
+  * `1_Starting_Point` folder is a stand-in for any folder containing the Plug-in file.
 
 ## Overview
 
@@ -79,6 +84,9 @@ Enter environmental information interactively:
 ### How to Use | Environment Variables Login Method
 Environment variables for the Kintone subdomain and login information can be set in advance. Let's save time by not inputting login information per Plug-in upload.
 
+Options:
+  * [For Windows/ PowerShell](#for-windows-powershell)
+  * [For Mac/ Terminal](#for-mac-terminal)
 
 #### For Windows/ [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/overview)
 
